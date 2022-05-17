@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "migrations": "tsc && node ./src/data/migrations.ts" 
+    "migrations": "tsc && node ./build/data/migrations.js"
   },
   "repository": {
     "type": "git",
@@ -24,6 +24,7 @@
     "cors": "^2.8.5",
     "dotenv": "^16.0.1",
     "knex": "^2.0.0",
+    "mysql": "^2.18.1",
     "typescript": "^4.6.4"
   }
 }
