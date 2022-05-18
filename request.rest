@@ -1,0 +1,20 @@
+###
+POST http://localhost:3003/class
+Content-Type: application/json
+
+{
+   "name":"Zuck",
+   "module":5
+}
+
+###
+POST http://localhost:3003/instructor
+Content-Type: application/json
+
+{
+    "name":"Iago",
+    "email": "iago@labenu.com.br",
+    "birth_date": "1990-05-17",
+    "class_id": "27d5835d-1ebd-45f6-9cc6-8201687bdae5",
+    "specialty": "04"
+}

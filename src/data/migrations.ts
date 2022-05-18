@@ -8,7 +8,7 @@ const createTables = () => connection
     CREATE TABLE IF NOT EXISTS class(
         id VARCHAR(255) PRIMARY KEY,
         name VARCHAR(255) NOT NULL UNIQUE,
-        module VARCHAR(255) DEFAULT 0
+        module INT DEFAULT 0
     );
     CREATE TABLE IF NOT EXISTS student(
         id VARCHAR(255) PRIMARY KEY,
