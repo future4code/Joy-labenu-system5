@@ -7,15 +7,15 @@ export class User {
 
     constructor(
         id: string,
-        email: string,
         name: string,
+        email: string,
         birth_date: Date,
         class_id: string
     ) {
         console.log("Class User Constructor")
         this.id = id
-        this.email = email
         this.name = name
+        this.email = email
         this.birth_date = birth_date
         this.class_id = class_id
     }

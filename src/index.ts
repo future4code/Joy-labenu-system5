@@ -6,7 +6,7 @@ import getClasses from "./endpoints/getClasses";
 import getInstructors from "./endpoints/getInstructors";
 import getStudents from "./endpoints/getStudents";
 
-app.get("/student", getStudents)
+app.get("/student/:name", getStudents)
 
 app
   .get("/class", getClasses)
