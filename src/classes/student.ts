@@ -7,7 +7,7 @@ export class Student extends User {
       id: string,
       name: string,
       email: string,
-      birthDate: string,
+      birthDate: Date,
       classID: string,
       hobby: string
       

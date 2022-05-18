@@ -1,8 +1,6 @@
 import knex from "knex";
 import dotenv from "dotenv";
-
 dotenv.config();
-
 const connection = knex({
     client: "mysql",
     connection:{
@@ -11,8 +9,7 @@ const connection = knex({
       port: 3306,
       password: process.env.DB_PASSWORD,
       database: process.env.DB_SCHEMA,
-      multipleStatements: true  
+      multipleStatements: true
     }
 });
-
 export default connection;
