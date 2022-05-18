@@ -1,7 +1,8 @@
 import { User } from "./user";
 
 export class Student extends User {
-    private hobby?: string;
+   
+  private hobby?: string;
   
     constructor(
       id: string,
