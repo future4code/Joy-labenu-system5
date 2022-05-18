@@ -6,7 +6,7 @@ export default async function getStudents(
   res: Response
 ): Promise<void> {
   try {
-    const name = req.query
+    const name = req.params
 
     if(!name) {
         throw new Error("favor informe o nome do estudante")
@@ -14,10 +14,10 @@ export default async function getStudents(
 
     const studentsList = await connection("student")
     .select("*")
-    // .join('student_hobby', 'student.id', 'student_hobby.student_id')
-    // .join('hobby', 'student_hobby.hobby_id', 'hobby.id')
-    // .select('student.*', 'student_hobby.hobby_id as hobby')
-    .where('student.name', name)
+    .join('student_hobby', 'student.id', 'student_hobby.student_id')
+    .join('hobby', 'student_hobby.hobby_id', 'hobby.id')
+    .select('student.*', 'hobby.name as hobby')
+    .where('student.name', req.params.name)
 
     res.send(studentsList)
   } catch (error: any) {
