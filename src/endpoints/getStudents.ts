@@ -20,7 +20,6 @@ export default async function getStudents(
     .where('student.name', name)
 
     res.send(studentsList)
-
   } catch (error: any) {
     res.send(error.message).status(201)
   }

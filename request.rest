@@ -6,8 +6,8 @@ POST http://localhost:3003/class
 Content-Type: application/json
 
 {
-   "name":"Zuck",
-   "module":5
+   "name":"STEVZINHO",
+   "module":"0"
 }
 
 ###
@@ -33,3 +33,10 @@ Content-Type: application/json
     "class_id": "27d5835d-1ebd-45f6-9cc6-8201687bdae5",
     "hobby": "Jogar Mine"
 }
+
+###
+GET http://localhost:3003/instructors
+
+
+###
+GET http://localhost:3003/class

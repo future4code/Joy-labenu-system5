@@ -11,6 +11,8 @@ export default async function createClass(
     const { name, module } = req.body
     const id = generateId()
 
+    console.log(req.body);
+    
     if (!name || !module) {
       throw new Error("Está faltando algum dado")
     }
@@ -20,7 +22,6 @@ export default async function createClass(
       name,
       module
     )
-
     await connection("class")
       .insert(classTech)
     res.send('tudo certo Brasil!')
