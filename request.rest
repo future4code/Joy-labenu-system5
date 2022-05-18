@@ -1,4 +1,7 @@
 ###
+GET http://localhost:3003/student?name=Dani
+
+###
 POST http://localhost:3003/class
 Content-Type: application/json
 
@@ -17,4 +20,16 @@ Content-Type: application/json
     "birth_date": "1990-05-17",
     "class_id": "27d5835d-1ebd-45f6-9cc6-8201687bdae5",
     "specialty": "04"
+}
+
+###
+POST http://localhost:3003/student
+Content-Type: application/json
+
+{
+    "name":"Jorge",
+    "email": "jorgin@linda.com.br",
+    "birth_date": "2003-07-22",
+    "class_id": "27d5835d-1ebd-45f6-9cc6-8201687bdae5",
+    "hobby": "Jogar Mine"
 }
