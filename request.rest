@@ -2,6 +2,12 @@
 GET http://localhost:3003/student/zé
 
 ###
+GET http://localhost:3003/instructors
+
+###
+GET http://localhost:3003/class
+
+###
 POST http://localhost:3003/class
 Content-Type: application/json
 
@@ -15,11 +21,11 @@ POST http://localhost:3003/instructor
 Content-Type: application/json
 
 {
-    "name":"Iago",
-    "email": "iago@labenu.com.br",
-    "birth_date": "1990-05-17",
+    "name":"jessica",
+    "email": "jessica2@labenu.com.br",
+    "birth_date": "1998-05-17",
     "class_id": "27d5835d-1ebd-45f6-9cc6-8201687bdae5",
-    "specialty": "04"
+    "specialty": "02"
 }
 
 ###
@@ -27,16 +33,45 @@ POST http://localhost:3003/student
 Content-Type: application/json
 
 {
-    "name":"zé",
-    "email": "zezin@linda.com.br",
-    "birth_date": "2000-09-22",
+    "name":"PedroScooby",
+    "email": "pedroscooby@bbb.com.br",
+    "birth_date": "2003-07-22",
     "class_id": "27d5835d-1ebd-45f6-9cc6-8201687bdae5",
     "hobby": "Jogar Mine"
 }
 
-###
-GET http://localhost:3003/instructors
 
 
+
+//alterar turma do  instructor
 ###
-GET http://localhost:3003/class
+PUT http://localhost:3003/instructor/f62bf662-892f-458c-ab12-6ad8dcb50b86
+Content-Type: application/json
+
+
+{
+ "class_id":"be8338c6-dfa2-40d9-af83-8474137c18a7"  
+}
+
+//alterar turma de modulo
+###
+PUT http://localhost:3003/class/be8338c6-dfa2-40d9-af83-8474137c18a7
+Content-Type: application/json
+
+
+{
+ "module":"05"  
+}
+
+//alterar turma do aluno 
+###
+PUT http://localhost:3003/student/ff1576e9-4aa2-499b-9e06-47cb081a4d26
+Content-Type: application/json
+
+{
+ "class_id":"27d5835d-1ebd-45f6-9cc6-8201687bdae5"  
+}
+
+
+
+
