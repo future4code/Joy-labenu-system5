@@ -1,33 +1,46 @@
-## LabenuSystem:
+# <div style="text-align: center"> ✨ LabeSystem ✨ </div>  
 
-Você estuda na Labenu_ há tanto tempo que já parecem anos, não é? Então, hoje, vamos pedir para criar um sistema que represente o básico da nossa organização. 
+<p align = "center">Sejam bem vindos ao LabeSystem, 
+Api para oraganização de instituições de ensino: </p>
 
-Ele deve possuir, ao menos, as 3 entidades importantes:
+<div align = "center">
+<img src="https://cdn-icons.flaticon.com/png/512/3345/premium/3345643.png?token=exp=1653072080~hmac=9d663844c1af8a9dabc1d660fa4ce1b8"  width="150" height="150" /> 
+</div>
 
-1. Estudantes 
+<br/>
 
-    Representa estudantes da nossa instituição. Eles devem possuir: id, nome, email, data de nascimento e os principais hobbies dele. 
+<div style="text-align: center"> Este é um projeto em grupo que busca reproduzir as funcionalidades básicas de um sistema, para organização e cadastro de turmas, professores e alunos.
 
-2. Docente
+Consiste basicamente no backend integrado com banco de dados MySql para uma API. </div>
 
-    Representa docentes da nossa instituição. Eles devem possuir: id, nome, email, data de nascimento e todas as especialidades dele. Há 7 especialidades: React, Redux, CSS, Testes, Typescript, Programação Orientada a Objetos e Backend
+</BR>
 
-3. Turma
+**- status concluído** ✅
 
-    Toda turma é composta das seguintes características: id, nome, data de início, data de término, lista de professores responsáveis, uma lista de alunos e módulo atual em que a turma está.
+<div align = "center"> <strong> TIME </strong> </div> 
+</BR>
+  <div align = "center">
 
-    O módulo pode assumir os valores de 1 a 7 ou `undefined`, indicando que as aulas dessa turma ainda não começaram. Para esse exercício, vamos considerar que existam dois tipos de turma: integral ou noturna. Há uma restrição para o nome das turmas noturnas: tem que terminar com `-na-night`.
+      Danielle de Oliveira Kensy 
+      karla Natany Gonçalves Bolzoni
+      Laís Medrado Soares da Silva
+      Luciano Ribeiro dos Santos
+</div>
+</BR>
 
-As funcionalidades básicas são:
+___
 
-→ Criar estudante;
+## 🔧 Ferramentas:
+- Knex
+- MySql
+- Typescript
+- Express
+- Node.js 
+- Cors
+___
+<br/>
+Para mais infoermações sobre uso dessa API consulte a documentação em: 
 
-→ Criar docente;
-
-→ Criar turma;
-
-→ Adicionar estudante na turma;
-
-→ Adicionar docente na turma;
-
-→ Pegar a idade de algum estudante a partir do id
+~~~
+BOTA O LINK AQUI KARLINHA
+~~~
