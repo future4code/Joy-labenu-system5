@@ -12,8 +12,8 @@ POST http://localhost:3003/class
 Content-Type: application/json
 
 {
-   "name":"STEVZINHO",
-   "module":"0"
+   "name":"STEVesss",
+   "module":"1"
 }
 
 ###
@@ -53,15 +53,19 @@ Content-Type: application/json
  "class_id":"be8338c6-dfa2-40d9-af83-8474137c18a7"  
 }
 
-//alterar turma de modulo
+//alterar modulo da turma
 ###
-PUT http://localhost:3003/class/be8338c6-dfa2-40d9-af83-8474137c18a7
+PUT http://localhost:3003/class/d9d00231-6310-49fa-a05a-510f874dae21
 Content-Type: application/json
 
 
 {
- "module":"05"  
+ "module": 5
 }
+
+
+
+
 
 //alterar turma do aluno 
 ###
@@ -69,7 +73,7 @@ PUT http://localhost:3003/student/ff1576e9-4aa2-499b-9e06-47cb081a4d26
 Content-Type: application/json
 
 {
- "class_id":"27d5835d-1ebd-45f6-9cc6-8201687bdae5"  
+ "class_id":"be8338c6-dfa2-40d9-af83-8474137c18a7"  
 }
 
 

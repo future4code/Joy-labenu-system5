@@ -24,6 +24,10 @@ export class User {
         return this.id;
     }
     public setId(id: string) {
+        if(!id){
+            throw new Error("Parâmetro não informado!")
+        };
+        
         this.id = id;
     }
     public getName() {

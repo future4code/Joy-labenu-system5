@@ -6,7 +6,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "migrations": "tsc && node ./build/data/migrations.js",
-    "start": "tsc && node ./build/index.js"
+    "start": "tsc && node ./build/index.js",
+    "dev": "nodemon ./src/index.ts"
   },
   "repository": {
     "type": "git",
@@ -33,6 +34,8 @@
     "uuid": "^8.3.2"
   },
   "devDependencies": {
-    "@types/uuid": "^8.3.4"
+    "@types/uuid": "^8.3.4",
+    "nodemon": "^2.0.16",
+    "ts-node": "^10.7.0"
   }
 }

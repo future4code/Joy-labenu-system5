@@ -4,17 +4,17 @@ import connection from "../data/connection";
 
 export default async function updateClass(
      id: string,
-      module: string
-     ) {
-      await connection ("class")
-      .where ({id})
-      .update ({module})
+     module: number
+) {
+     await connection("class")
+          .update('module', module)
+          .where('id', id)
 
-     }
-        
- 
+}
 
-      
+
+
+
 
 
 
