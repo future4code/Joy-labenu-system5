@@ -1,4 +1,4 @@
-# <div style="text-align: center"> ✨ LabeSystem ✨ </div>  
+# <p align = "center"> ✨ LabeSystem ✨ </p>  
 
 <p align = "center">Sejam bem vindos ao LabeSystem, 
 Api para oraganização de instituições de ensino: </p>
@@ -9,9 +9,9 @@ Api para oraganização de instituições de ensino: </p>
 
 <br/>
 
-<div style="text-align: center"> Este é um projeto em grupo que busca reproduzir as funcionalidades básicas de um sistema, para organização e cadastro de turmas, professores e alunos.
+<p align = "center"> Este é um projeto em grupo que busca reproduzir as funcionalidades básicas de um sistema, para organização e cadastro de turmas, professores e alunos.
 
-Consiste basicamente no backend integrado com banco de dados MySql para uma API. </div>
+Consiste basicamente no backend integrado com banco de dados MySql para uma API. </p>
 
 </BR>
 
