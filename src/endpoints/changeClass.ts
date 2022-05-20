@@ -1,6 +1,7 @@
 import { Request, Response } from 'express';
 import updateClass from '../data/updateClass';
 import connection from '../data/connection';
+import { errors } from '../constants/errors';
 
 export default async function changeClass(
     req: Request,
@@ -11,21 +12,21 @@ export default async function changeClass(
         const id: string = req.params.id;
 
         if (!module || !id) {
-            throw new Error("Um ou mais parâmentros ausentes!");
+            throw new Error(errors.UNPROCESSABLE_ENTITY.message);
         };
 
         const existsId = await connection('class').where('id', id);
         if (existsId.length === 0) {
-            throw new Error("Turma não encontrada!");
+            throw new Error(errors.CLASS_NOT_FOUND.message);
         };
 
 
         if (typeof module !== "number") {
-            throw new Error("Tipo do módulo inválido!");
+            throw new Error(errors.INVALID_TYPE_MODULE.message);
         };
 
         if (module > 6) {
-            throw new Error("O módulo deve ser maior ou igual a 6!");
+            throw new Error(errors.INVALID_MODULE.message);
         };
 
         const existsModule = await connection('class')
@@ -33,11 +34,11 @@ export default async function changeClass(
             .where('id', id);
 
         if (module <= existsModule[0].module) {
-            throw new Error(`O módulo precisa ser maior que ${module}!`);
+            throw new Error(errors.OUTDATED_MODULE.message);
         };
 
-        if (module !== existsModule[0].module++) {
-            throw new Error("Não é possível avançar mais de um módulo de uma vez!");
+        if (module > (existsModule[0].module + 1)) {
+            throw new Error(errors.UNAUTHORIZED_MODULE_UPDATE.message);
         };
 
         await updateClass(
@@ -50,12 +51,28 @@ export default async function changeClass(
             .send({
                 message: "Campo alterado com sucesso!"
             });
+
     } catch (error: any) {
-        res
-            .status(400)
-            .send({
-                message: error.message || error.sqlMessage
-            });
+        switch(error.message){
+            case errors.UNPROCESSABLE_ENTITY.message:
+                res.status(errors.UNPROCESSABLE_ENTITY.errorCode).send(errors.UNPROCESSABLE_ENTITY.message);
+            break;
+            case errors.CLASS_NOT_FOUND.message:
+                res.status(errors.CLASS_NOT_FOUND.errorCode).send(errors.CLASS_NOT_FOUND.message);
+            break;
+            case errors.INVALID_TYPE_MODULE.message:
+                res.status(errors.INVALID_TYPE_MODULE.errorCode).send(errors.INVALID_TYPE_MODULE.message);
+            break;
+            case errors.INVALID_MODULE.message:
+                res.status(errors.INVALID_MODULE.errorCode).send(errors.INVALID_MODULE.message);
+            break;
+            case errors.OUTDATED_MODULE.message:
+                res.status(errors.OUTDATED_MODULE.errorCode).send(errors.OUTDATED_MODULE.message);
+            break;
+            case errors.UNAUTHORIZED_MODULE_UPDATE.message:
+                res.status(errors.UNAUTHORIZED_MODULE_UPDATE.errorCode).send(errors.UNAUTHORIZED_MODULE_UPDATE.message);
+            break;         
+        };
     };
 };
 
