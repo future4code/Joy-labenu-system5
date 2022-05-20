@@ -4,7 +4,7 @@
 Api para oraganização de instituições de ensino: </p>
 
 <div align = "center">
-<img src="https://cdn-icons.flaticon.com/png/512/3345/premium/3345643.png?token=exp=1653072080~hmac=9d663844c1af8a9dabc1d660fa4ce1b8"  width="150" height="150" /> 
+<img src="https://cdn-icons-png.flaticon.com/512/7509/7509696.png"  width="150" height="150" /> 
 </div>
 
 <br/>
