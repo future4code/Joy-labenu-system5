@@ -1,12 +1,12 @@
 export class ClassTech {
   private id: string
   private name: string
-  private module: string
+  private module: number
   
   constructor(
     id: string,
     name: string,
-    module: string
+    module: number
   ) {
     this.id = id
     this.name = name
@@ -21,7 +21,7 @@ export class ClassTech {
     return this.name
   }
 
-  public getModule(): string {
+  public getModule(): number {
     return this.module
   }
 }
