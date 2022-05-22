@@ -1,5 +1,5 @@
 import { Request, Response } from 'express';
-import updateInstructor from '../data/updateInstructor';
+import updateInstructor from '../queries/updateInstructor';
 import connection from '../data/connection';
 import { errors } from '../constants/errors';
 

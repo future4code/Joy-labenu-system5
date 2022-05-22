@@ -1,8 +1,7 @@
 import { Request, Response } from 'express';
-import updateStudent from '../data/updateStudent';
+import updateStudent from '../queries/updateStudent';
 import { errors } from "../constants/errors";
 import connection from '../data/connection';
-
 
 export default async function changeStudent(
     req: Request,

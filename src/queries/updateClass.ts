@@ -6,8 +6,8 @@ export default async function updateClass(
 ) {
      await connection("class")
           .update('module', module)
-          .where('id', id)
-}
+          .where('id', id);
+};
 
 
 

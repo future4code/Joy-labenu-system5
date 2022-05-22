@@ -6,8 +6,8 @@ export default async function updateInstructor(
 ) {
   await connection("instructor")
     .update('class_id', class_id)
-    .where('id', id)
-}
+    .where('id', id);
+};
 
 
 
