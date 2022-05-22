@@ -1,7 +1,5 @@
 import connection from "../data/connection";
 
-//função para alterar um instrutor
-
 export default async function updateClass(
      id: string,
      module: number
@@ -9,7 +7,6 @@ export default async function updateClass(
      await connection("class")
           .update('module', module)
           .where('id', id)
-
 }
 
 
