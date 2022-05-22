@@ -35,7 +35,7 @@ export default async function createInstructor(
         specialty_id: specialty
       })
 
-    res.send('Instructor - tudo certo Brasil!')
+    res.send(`${name} teve seu cadastro realizado com sucesso, como pessoa instrutora.`)
 
   } catch (error: any) {
     res.send(error.message).status(201)

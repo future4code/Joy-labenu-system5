@@ -2,22 +2,22 @@ export class User {
     private id: string
     private name: string
     private email: string
-    private birth_date: Date
-    private class_id: string
+    private birthDate: Date
+    private classId: string
 
     constructor(
         id: string,
         name: string,
         email: string,
-        birth_date: Date,
-        class_id: string
+        birthDate: Date,
+        classId: string
     ) {
         console.log("Class User Constructor")
         this.id = id
         this.name = name
         this.email = email
-        this.birth_date = birth_date
-        this.class_id = class_id
+        this.birthDate = birthDate
+        this.classId = classId
     }
 
     public getId() {
@@ -43,15 +43,15 @@ export class User {
         this.email = email;
     }
     public getBirthDate() {
-        return this.birth_date;
+        return this.birthDate;
     }
     public setBirthDate(birthDate: Date) {
-        this.birth_date = birthDate;
+        this.birthDate = birthDate;
     }
     public getClassId() {
-        return this.class_id;
+        return this.classId;
     }
     public setClassId(classId: string) {
-        this.class_id = classId;
+        this.classId = classId;
     }
 }
