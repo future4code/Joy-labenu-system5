@@ -63,11 +63,11 @@ Content-Type: application/json
 
 //alterar turma do aluno 
 ###
-PUT http://localhost:3003/student/ff1576e9-4aa2-499b-9e06-47cb081a4d26
+PUT http://localhost:3003/student/04a612f6-15cc-49a3-a3f6-3687cb895a8a
 Content-Type: application/json
 
 {
- "class_id":"be8338c6-dfa2-40d9-af83-8474137c18a7"  
+ "class_id": "27d5835d-1ebd-45f6-9cc6-8201687bdae5"
 }
 
 
