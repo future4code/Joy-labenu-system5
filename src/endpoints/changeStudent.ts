@@ -1,10 +1,6 @@
 import {Request, Response} from 'express';
 import updateStudent from '../data/updateStudent';
 
-
-
-//validar as entradas
-
 export default async function changeStudent(
  req:Request,
  res: Response
@@ -13,12 +9,11 @@ export default async function changeStudent(
        const class_id = req.body.class_id;
        const id = req.params.id;
         
-        //
          if(!class_id){
         throw new Error("class_id is required");
          }
-         //chamando o banco de dados
-        await updateStudent (
+
+         await updateStudent (
             id,
             class_id
          )

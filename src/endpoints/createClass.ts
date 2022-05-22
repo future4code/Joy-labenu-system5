@@ -24,7 +24,7 @@ export default async function createClass(
     )
     await connection("class")
       .insert(classTech)
-    res.send('tudo certo Brasil!')
+    res.send(`Turma ${name} cadastrada com sucesso`)
 
   } catch (error: any) {
     res.send(error.message).status(201)

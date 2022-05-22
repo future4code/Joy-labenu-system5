@@ -1,7 +1,7 @@
 # <p align = "center"> ✨ LabeSystem ✨ </p>  
 
 <p align = "center">Sejam bem vindos ao LabeSystem, 
-Api para oraganização de instituições de ensino: </p>
+Api para organização de instituições de ensino: </p>
 
 <div align = "center">
 <img src="https://cdn-icons-png.flaticon.com/512/7509/7509696.png"  width="150" height="150" /> 
@@ -9,7 +9,7 @@ Api para oraganização de instituições de ensino: </p>
 
 <br/>
 
-<p align = "center"> Este é um projeto em grupo que busca reproduzir as funcionalidades básicas de um sistema, para organização e cadastro de turmas, professores e alunos. Consiste basicamente no backend integrado com banco de dados MySql para uma API. </p>
+<p align = "center"> Este é um projeto em grupo que busca reproduzir as funcionalidades básicas de um sistema, para gestão de turmas, professores e alunos. Consiste basicamente no backend integrado com banco de dados MySql para uma API. </p>
 
 </BR>
 
@@ -40,5 +40,5 @@ ___
 Para mais infoermações sobre uso dessa API consulte a documentação em: 
 
 ~~~
-BOTA O LINK AQUI KARLINHA
+https://documenter.getpostman.com/view/18687362/UyxojQHB
 ~~~

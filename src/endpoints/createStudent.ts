@@ -8,10 +8,10 @@ export default async function createStudent(
   res: Response
 ): Promise<void> {
   try {
-    const { name, email, birth_date, class_id, hobby } = req.body
+    const { name, email, birthDate, classId, hobby } = req.body
     const id = generateId()
 
-    if (!name || !email || !class_id || !birth_date) {
+    if (!name || !email || !classId || !birthDate) {
       throw new Error("Está faltando algum dado")
     }
 
@@ -19,11 +19,11 @@ export default async function createStudent(
       id,
       name,
       email,
-      birth_date,
-      class_id
+      birthDate,
+      classId
     )
 
-    const student_hobbyId = generateId()
+    const studentHobbyId = generateId()
 
     const hobbyId = generateId() 
 
@@ -38,12 +38,12 @@ export default async function createStudent(
 
     await connection("student_hobby")
       .insert({
-        id: student_hobbyId,
+        id: studentHobbyId,
         student_id: id,
         hobby_id: hobbyId
       })
 
-    res.send('student - tudo certo Brasil!')
+    res.send(`Cadastro realizado com sucesso.`)
 
   } catch (error: any) {
     res.send(error.message).status(201)

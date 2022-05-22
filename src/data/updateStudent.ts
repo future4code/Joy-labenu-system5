@@ -1,7 +1,5 @@
 import connection from "../data/connection";
 
-//função para alterar um instrutor
-
 export default async function updateStudent(
       id: string,
       class_id: string
@@ -11,4 +9,5 @@ export default async function updateStudent(
       .update({class_id})
       
     }
+    
       

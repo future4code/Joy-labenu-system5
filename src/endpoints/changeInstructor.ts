@@ -1,8 +1,6 @@
 import {Request, Response} from 'express';
 import updateInstructor from '../data/updateInstructor';
 
-//validar as entradas
-
 export default async function changeInstructor(
  req:Request,
  res: Response
@@ -14,7 +12,7 @@ export default async function changeInstructor(
         if(!class_id){
           throw new Error("class_id is required");
         }
-        //chamando o banco de dados
+
         await updateInstructor (
             id,
             class_id
