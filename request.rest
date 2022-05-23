@@ -48,12 +48,12 @@ Content-Type: application/json
 
 //Alterar turma do instructor
 ###
-PUT http://localhost:3003/instructor/f62bf662-892f-458c-ab12-6ad8dcb50b86
+PUT http://localhost:3003/instructor/03c570ce-ea47-473c-91de-0a9654c01a9b
 Content-Type: application/json
 
 
 {
- "class_id":"d9d00231-6310-49fa-a05a-510f874dae21"  
+ "class_id":"27d5835d-1ebd-45f6-9cc6-8201687bdae5"  
 }
 
 //Alterar modulo da turma
