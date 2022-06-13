@@ -1,33 +1,44 @@
-## LabenuSystem:
+# <p align = "center"> ✨ LabeSystem ✨ </p>  
 
-Você estuda na Labenu_ há tanto tempo que já parecem anos, não é? Então, hoje, vamos pedir para criar um sistema que represente o básico da nossa organização. 
+<p align = "center">Sejam bem vindos ao LabeSystem, 
+Api para organização de instituições de ensino: </p>
 
-Ele deve possuir, ao menos, as 3 entidades importantes:
+<div align = "center">
+<img src="https://cdn-icons-png.flaticon.com/512/7509/7509696.png"  width="150" height="150" /> 
+</div>
 
-1. Estudantes 
+<br/>
 
-    Representa estudantes da nossa instituição. Eles devem possuir: id, nome, email, data de nascimento e os principais hobbies dele. 
+<p align = "center"> Este é um projeto em grupo que busca reproduzir as funcionalidades básicas de um sistema, para gestão de turmas, professores e alunos. Consiste basicamente no backend integrado com banco de dados MySql para uma API. </p>
 
-2. Docente
+</BR>
 
-    Representa docentes da nossa instituição. Eles devem possuir: id, nome, email, data de nascimento e todas as especialidades dele. Há 7 especialidades: React, Redux, CSS, Testes, Typescript, Programação Orientada a Objetos e Backend
+**- status concluído** ✅
 
-3. Turma
+<div align = "center"> <strong> TIME </strong> </div> 
+</BR>
+  <div align = "center">
 
-    Toda turma é composta das seguintes características: id, nome, data de início, data de término, lista de professores responsáveis, uma lista de alunos e módulo atual em que a turma está.
+      Danielle de Oliveira Kensy 
+      karla Natany Gonçalves Bolzoni
+      Laís Medrado Soares da Silva
+      Luciano Ribeiro dos Santos
+</div>
+</BR>
 
-    O módulo pode assumir os valores de 1 a 7 ou `undefined`, indicando que as aulas dessa turma ainda não começaram. Para esse exercício, vamos considerar que existam dois tipos de turma: integral ou noturna. Há uma restrição para o nome das turmas noturnas: tem que terminar com `-na-night`.
+___
 
-As funcionalidades básicas são:
+## 🔧 Ferramentas:
+- Knex
+- MySql
+- Typescript
+- Express
+- Node.js 
+- Cors
+___
+<br/>
+Para mais infoermações sobre uso dessa API consulte a documentação em: 
 
-→ Criar estudante;
-
-→ Criar docente;
-
-→ Criar turma;
-
-→ Adicionar estudante na turma;
-
-→ Adicionar docente na turma;
-
-→ Pegar a idade de algum estudante a partir do id
+~~~
+https://documenter.getpostman.com/view/18687362/UyxojQHB
+~~~
